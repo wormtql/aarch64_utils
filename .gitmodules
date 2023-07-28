@@ -1,0 +1,3 @@
+[submodule "InOneWeekend"]
+	path = InOneWeekend
+	url = https://github.com/RayTracing/InOneWeekend.git
