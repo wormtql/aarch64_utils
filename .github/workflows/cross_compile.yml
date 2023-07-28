@@ -2,9 +2,9 @@ name: Cross Compile to AArch64
 
 on:
   push:
-    branches: [ "cpp" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "cpp" ]
+    branches: [ "main" ]
 
 jobs:
   build:
