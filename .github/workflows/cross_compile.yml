@@ -39,4 +39,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Assembly
-        path: ./artifacts/pocketfft-aarch64.s
+        path: ./artifacts/raytracinginoneweekend.s
