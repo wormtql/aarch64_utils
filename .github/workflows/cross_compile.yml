@@ -31,8 +31,10 @@ jobs:
         run: |
           apt-get -q update
           apt-get install -y -q clang libc++-dev libc++abi-dev
-          clang++ InOneWeekend/src/main.cc -S -O3 -o raytracinginoneweekend.s
-          cp raytracinginoneweekend.s /artifacts
+          clang++ raytracing.github.io/src/InOneWeekend/main.cc -S -O3 -o rt1.s
+          clang++ raytracing.github.io/src/TheNextWeekend/main.cc -S -O3 -o rt2.s
+          cp rt1.s /artifacts
+          cp rt2.s /artifacts
 #     - name: Show artifacts
 #       run: |
 #         ls -al "${PWD}/artifacts"
