@@ -32,7 +32,7 @@ jobs:
           apt-get -q update
           apt-get install -y -q clang libc++-dev libc++abi-dev
           clang++ raytracing.github.io/src/InOneWeekend/main.cc -S -O3 -I raytracing.github.io/src/common -o rt1.s
-          clang++ raytracing.github.io/src/TheNextWeekend/main.cc -S -O3 -I raytracing.github.io/src/common -o rt2.s
+          clang++ raytracing.github.io/src/TheNextWeek/main.cc -S -O3 -I raytracing.github.io/src/common -o rt2.s
           cp rt1.s /artifacts
           cp rt2.s /artifacts
 #     - name: Show artifacts
