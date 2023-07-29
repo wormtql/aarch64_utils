@@ -41,4 +41,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Assembly
-        path: ./artifacts/raytracinginoneweekend.s
+        path: ./artifacts/*.s
